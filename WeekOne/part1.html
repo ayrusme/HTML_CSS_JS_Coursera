@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dating Website</title>
+</head>
+<body>
+	<h1>PLEASE ENTER YOUR DETAILS FOR OUR DATING WEBSITE</h1>
+</body>
+<form action="https://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php" method="post" enctype="multipart/form-data">
+	<fieldset>
+		<legend><b>Your Face</b></legend>
+		<label for="photo">Your image:</label> <input type="file" name="fileselect" id="photo"><br><br>
+		<label for="preview">Image preview:</label><img id="preview" name="Your Avatar" /> 
+	</fieldset>
+	<fieldset>
+	<legend><b>Your General Details</b></legend>
+		<label for="name">Name:</label> <input type="text" name="gen_name" id="name"><br><br>
+		<label for="gender">Gender:</label>  <input type="radio" name="Male" id="gender">Male <input type="radio" name="Female" id="gender">Female<br><br>
+		<label for="age">Age:</label> <input type="number" name="Age" id="age"><br><br>
+		<label for="dob">Date of Birth:</label> <input type="date" name="dateofbirth" id="dob"><br><br>
+		<label for="favcolor">Your Favorite Color?</label> <input type="color" id="favcolor" name="color"><br><br>
+		<label for="country">Country:</label>
+		<select id="country">
+			<option value="No Selection">No Selection</option>
+			<option value="India">India</option>
+			<option value="China">China</option>
+			<option value="USA">USA</option>
+			<option value="Germany">Germany</option>
+			<option value="Singapore">Singapore</option>
+		</select>
+	</fieldset>
+	<fieldset>
+		<legend><b>Your Indicators</b></legend>
+		<label for="height">Height:</label> Dwarf <input type="range" id="indi" min="0" max="100"> Giant<br><br>
+		<label for="salary">Salary:</label> Broke <input type="range" id="indi" min="0" max="100"> Bill Gates<br>
+	</fieldset>
+	<fieldset>
+		<legend><b>Your Contact Information</b></legend>
+		<label for="emailid">Email ID:</label> <input type="email" name="email" id="emailid"><br><br>
+		<label for="phno">Phone Number:</label> <input type="tel" name="phonenumber" id="phno"><br><br>
+		<label for="address">Address:</label> <textarea id="address"></textarea><br><br>
+		<label for="contact">How should you be contacted?</label>
+		<input type="checkbox" id="contact">Email <input type="checkbox" id="contact">Whatsapp <input type="checkbox" id="contact">In-app chat<br><br>
+	</fieldset>
+	<input type="submit" value="Submit!">
+	
+</form>
+
+</body>
+</html>
