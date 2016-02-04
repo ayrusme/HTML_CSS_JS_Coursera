@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Part Two - Advanced Javascript</title>
+	<title>Part Three - Advanced Javascript</title>
 	<style type="text/css">
 		img
 		{
@@ -32,8 +32,11 @@
 				imag.style.top=(Math.floor(Math.random()*400))+"px";
 				imag.style.left=(Math.floor(Math.random()*400))+"px";
 				number_of_faces-=1;
-
 			}
+			var theRightSide=document.getElementById("RightSide");
+			var leftSideImages=theLeftSide.cloneNode(true);
+			leftSideImages.removeChild(leftSideImages.lastChild);
+			theRightSide.appendChild(leftSideImages);
 		}
 	</script>
 </head>

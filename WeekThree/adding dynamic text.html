@@ -1,0 +1,18 @@
+<!DOCTYPE Html>
+<Html>
+<head>
+	<title>Dynamic text in webpage</title>
+	<script type="text/javascript">
+	function addtext()
+	{
+		var newitem = document.createTextNode("Dynamic Text");
+		var insert = document.getElementById("ptag");
+		insert.appendChild(newitem);
+	}
+	</script>
+</head>
+<body onclick="addtext()">
+	<h1>Click the webpage</h1>
+	<p id="ptag"></p>
+</body>
+</html>
