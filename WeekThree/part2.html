@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Part Two - Advanced Javascript</title>
+	<style type="text/css">
+		img
+		{
+			position: absolute;
+		}
+		div
+		{
+			position: absolute;
+			width: 500px;
+			height: 500px;
+		}
+		#RightSide
+		{
+			left: 500px;
+			border-left: 1px solid black;
+
+		}
+	</style>
+	<script type="text/javascript">
+		function generateFaces()
+		{	var theLeftSide=document.getElementById("LeftSide");
+			var number_of_faces=5;
+			while(number_of_faces>0)
+			{
+				var imag = document.createElement("img");	
+				imag.src="smile.png";
+				theLeftSide.appendChild(imag);
+				imag.style.top=(Math.floor(Math.random()*400))+"px";
+				imag.style.left=(Math.floor(Math.random()*400))+"px";
+				number_of_faces-=1;
+
+			}
+		}
+	</script>
+</head>
+<body onload="generateFaces()">
+	<div id="LeftSide"></div>
+	<div id="RightSide"></div>
+</body>
+</html>
